@@ -3,14 +3,14 @@ import styles from './App.module.css';
 import PageLayout from './shared/ui/PageLayout/PageLayout';
 import TopNav from './shared/ui/TopNav/TopNav';
 import HeroSection from './features/hero/presentation/HeroSection';
-import CaseStudiesSection from './features/case-studies/presentation/CaseStudiesSection';
+import ProjectsSection from './features/projects/presentation/ProjectsSection';
 import CaseStudyPage from './features/case-studies/presentation/CaseStudyPage';
 
 function HomePage() {
   return (
-    <PageLayout variant="hero">
+    <PageLayout variant="scrollable">
       <HeroSection />
-      <CaseStudiesSection />
+      <ProjectsSection />
     </PageLayout>
   );
 }

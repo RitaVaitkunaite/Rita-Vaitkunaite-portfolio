@@ -106,3 +106,14 @@
 :global([data-theme="light"]) .email {
   color: rgba(255, 255, 255, 0.40);
 }
+
+@media (max-width: 640px) {
+  .nav {
+    padding: 0 16px;
+  }
+
+  /* Email is too long for narrow screens */
+  .email {
+    display: none;
+  }
+}

@@ -3,9 +3,6 @@
 .pageHero {
   position: fixed;
   inset: 0;
-  background-color: var(--color-bg);
-  background-size: cover;
-  background-position: center center;
   z-index: 0;
 }
 

@@ -1,0 +1,150 @@
+.section {
+  background: #ffffff;
+  padding: 50px 25px 80px;
+}
+
+.grid {
+  display: flex;
+  gap: 74px;
+  align-items: stretch;
+}
+
+/* ── LEFT column ── */
+
+.teaser {
+  flex: 0 0 38%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tagRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.tag {
+  background: #C8F135;
+  color: #000000;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 400;
+  padding: 3px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.year {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 400;
+  color: #1a1a1a;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #1a1a1a;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.titleUnderline {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.description {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #1a1a1a;
+  margin: 12px 0 0;
+}
+
+.caseStudyLink {
+  font-family: var(--font-sans);
+  font-size: 24px;
+  font-weight: 400;
+  color: #1a1a1a;
+  text-decoration: none;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.caseStudyLink:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #1a1a1a;
+  width: 100%;
+  margin: 0;
+}
+
+/* ── RIGHT column — Key Findings card ── */
+
+.findingsCard {
+  background: #C8F135;
+  color: #002500;
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 20px 24px;
+  flex: 0 0 auto;
+  width: 300px;
+}
+
+.findingsHeader {
+  margin: 0 0 16px;
+  letter-spacing: 0.06em;
+}
+
+.findingItem {
+  display: flex;
+  gap: 12px;
+  padding: 14px 0;
+}
+
+.findingNum {
+  flex-shrink: 0;
+}
+
+.findingDivider {
+  border: none;
+  border-top: 1px solid #002500;
+  margin: 0;
+  opacity: 0.3;
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 32px 20px 48px;
+  }
+
+  .grid {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .teaser {
+    flex: none;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .findingsCard {
+    width: 100%;
+  }
+}

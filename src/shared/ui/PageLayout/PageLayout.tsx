@@ -19,17 +19,11 @@ function PageLayout({ children, variant = 'hero', theme }: Props) {
     }
   }, [variant]);
 
-  const heroStyle = variant === 'hero'
-    ? { backgroundImage: `url(${process.env.PUBLIC_URL}/cat1.jpeg)` }
-    : {};
-
   return (
     <div
       className={variant === 'hero' ? styles.pageHero : styles.pageScroll}
-      style={heroStyle}
       data-theme={theme}
     >
-      {!theme && <div className={styles.vignette} aria-hidden="true" />}
       {children}
     </div>
   );
