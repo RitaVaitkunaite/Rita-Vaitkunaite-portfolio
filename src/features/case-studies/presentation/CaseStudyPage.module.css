@@ -14,7 +14,7 @@
 
 /* ── Page wrapper (scrollable, padded below fixed nav) ── */
 .page {
-  padding-top: 112px;
+  padding-top: 96px;
   padding-left: var(--space-12);
   padding-right: var(--space-8);
   padding-bottom: var(--space-24);

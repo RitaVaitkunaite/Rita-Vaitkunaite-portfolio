@@ -33,17 +33,17 @@ function ProjectsSection() {
 
         {/* RIGHT — key findings card */}
         <div className={styles.findingsCard}>
-          <p className={styles.findingsHeader}>KEY FINDINGS</p>
+          <div className={styles.findingsHeaderRow}>
+            <span className={styles.findingsHeaderText}>KEY FINDINGS</span>
+          </div>
           <div className={styles.findingItem}>
             <span className={styles.findingNum}>[ 1 ]</span>
             <span>SHADOW IT IS A TRUST PROBLEM, NOT A TECHNOLOGY PROBLEM.</span>
           </div>
-          <hr className={styles.findingDivider} />
           <div className={styles.findingItem}>
             <span className={styles.findingNum}>[ 2 ]</span>
-            <span>6 SOURCES. 8 ANSWERS. NO CONSENSUS AFTER 11 YEARS.</span>
+            <span>6 SOURCES. 6 ANSWERS. NO CONSENSUS AFTER 11 YEARS.</span>
           </div>
-          <hr className={styles.findingDivider} />
           <div className={styles.findingItem}>
             <span className={styles.findingNum}>[ 3 ]</span>
             <span>FINANCE IS THE ONLY LEVER SYSADMINS ACTUALLY TRUST.</span>

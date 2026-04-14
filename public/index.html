@@ -37,9 +37,10 @@
           var decoded = l.search.slice(1).split('&').map(function (s) {
             return s.replace(/~and~/g, '&');
           });
+          var path = decoded.shift();
           window.history.replaceState(
             null, null,
-            decoded.shift() + (decoded.length ? '?' + decoded.join('&') : '') + l.hash
+            l.pathname.replace(/\/$/, '') + path + (decoded.length ? '?' + decoded.join('&') : '') + l.hash
           );
         }
       }(window.location));

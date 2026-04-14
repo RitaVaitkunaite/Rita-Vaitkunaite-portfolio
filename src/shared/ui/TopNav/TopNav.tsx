@@ -7,12 +7,9 @@ function TopNav() {
         <span className={styles.brand}>
           Rita Vaitkūnaitė
         </span>
-        <span className={styles.divider} aria-hidden="true" />
-        <div className={styles.links}>
-          <a href="/">Work</a>
-        </div>
       </div>
       <div className={styles.right}>
+        <span className={styles.email}>ritavaitkunaite@gmail.com</span>
         <a
           href="https://www.linkedin.com/in/rita-vaitkūnaitė-62b0981b6/"
           target="_blank"
@@ -20,7 +17,6 @@ function TopNav() {
         >
           LinkedIn ↗
         </a>
-        <span className={styles.email}>ritavaitkunaite@gmail.com</span>
       </div>
     </nav>
   );
