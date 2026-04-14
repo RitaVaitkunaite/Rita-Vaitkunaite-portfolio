@@ -1,0 +1,108 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  height: 48px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.brand {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.divider {
+  display: block;
+  width: 1px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.35);
+  margin: 0 14px;
+  flex-shrink: 0;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.links a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  transition: color var(--transition-base);
+}
+
+.links a:hover {
+  color: var(--color-text-primary);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.right a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  transition: color var(--transition-base);
+}
+
+.right a:hover {
+  color: var(--color-text-primary);
+}
+
+.email {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+/* ── Light theme: give nav a dark backdrop so it lifts off the page ── */
+:global([data-theme="light"]) .nav {
+  background-color: rgba(26, 26, 24, 0.90);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+:global([data-theme="light"]) .brand {
+  color: rgba(255, 255, 255, 0.90);
+}
+:global([data-theme="light"]) .links a {
+  color: rgba(255, 255, 255, 0.65);
+}
+:global([data-theme="light"]) .links a:hover {
+  color: #ffffff;
+}
+:global([data-theme="light"]) .right a {
+  color: rgba(255, 255, 255, 0.65);
+}
+:global([data-theme="light"]) .right a:hover {
+  color: #ffffff;
+}
+:global([data-theme="light"]) .email {
+  color: rgba(255, 255, 255, 0.40);
+}

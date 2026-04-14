@@ -1,0 +1,81 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Fonts */
+  --font-serif: 'EB Garamond', Georgia, serif;
+  --font-sans:  'DM Sans', system-ui, sans-serif;
+
+  /* Colors */
+  --color-bg:           #0d1a14;
+  --color-bg-scroll:    #111e18;
+  --color-glass-bg:     rgba(255, 255, 255, 0.18);
+  --color-glass-border: rgba(255, 255, 255, 0.30);
+  --color-text-primary:   #ffffff;
+  --color-text-secondary: rgba(255, 255, 255, 0.85);
+  --color-text-muted:     rgba(255, 255, 255, 0.55);
+  --color-accent-pink:  #ff2d78;
+  --color-postit-yellow: #fef08a;
+  --color-postit-pink:   #fda4af;
+  --color-ink-dark:      #1a1a1a;
+  --color-border:        rgba(255, 255, 255, 0.12);
+
+  /* Type scale */
+  --text-xs:   0.72rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   clamp(1.5rem, 4vw, 2rem);
+  --text-2xl:  clamp(2rem, 5vw, 3rem);
+  --text-3xl:  clamp(2.5rem, 6vw, 4rem);
+
+  /* Spacing */
+  --space-2:  0.5rem;
+  --space-4:  1rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+
+  /* Surfaces (used in card/row fills — invertible per theme) */
+  --color-surface:        rgba(255, 255, 255, 0.02);
+  --color-surface-hover:  rgba(255, 255, 255, 0.05);
+  --color-surface-strong: rgba(255, 255, 255, 0.04);
+  --color-nav-bg:         rgba(13, 26, 20, 0.88);
+
+  /* Misc */
+  --radius-sm:       4px;
+  --transition-base: 150ms ease;
+  --shadow-lift:     3px 4px 18px rgba(0, 0, 0, 0.35), 1px 1px 0 rgba(0, 0, 0, 0.08);
+  --shadow-lift-hover: 5px 8px 28px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="light"] {
+  --color-bg:             #f9f8f5;
+  --color-bg-scroll:      #f5f4f1;
+  --color-glass-bg:       rgba(0, 0, 0, 0.04);
+  --color-glass-border:   rgba(0, 0, 0, 0.12);
+  --color-text-primary:   #1a1a1a;
+  --color-text-secondary: rgba(26, 26, 26, 0.78);
+  --color-text-muted:     rgba(26, 26, 26, 0.45);
+  --color-border:         rgba(0, 0, 0, 0.12);
+  --color-surface:        rgba(0, 0, 0, 0.02);
+  --color-surface-hover:  rgba(0, 0, 0, 0.05);
+  --color-surface-strong: rgba(0, 0, 0, 0.03);
+  --color-nav-bg:         rgba(26, 26, 24, 0.90);
+  --shadow-lift:          3px 4px 18px rgba(0, 0, 0, 0.12), 1px 1px 0 rgba(0, 0, 0, 0.05);
+  --shadow-lift-hover:    5px 8px 28px rgba(0, 0, 0, 0.18);
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  color: var(--color-text-primary);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

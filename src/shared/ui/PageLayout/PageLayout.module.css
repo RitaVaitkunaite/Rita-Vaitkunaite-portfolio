@@ -1,0 +1,26 @@
+/* ── Hero variant — full-screen, fixed, non-scrolling ── */
+/* Background image is applied via inline style in PageLayout.tsx (public folder asset) */
+.pageHero {
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-bg);
+  background-size: cover;
+  background-position: center center;
+  z-index: 0;
+}
+
+/* ── Scrollable variant — dark page with content ── */
+.pageScroll {
+  min-height: 100vh;
+  background-color: var(--color-bg-scroll);
+  position: relative;
+}
+
+/* ── Vignette overlay (darkens edges) ── */
+.vignette {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 1;
+}
