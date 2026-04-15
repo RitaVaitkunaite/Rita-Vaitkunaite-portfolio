@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Rita-Vaitkunaite-portfolio/static/css/main.a0cdbeb6.css",
-    "main.js": "/Rita-Vaitkunaite-portfolio/static/js/main.ca04de41.js",
+    "main.css": "/Rita-Vaitkunaite-portfolio/static/css/main.17092c42.css",
+    "main.js": "/Rita-Vaitkunaite-portfolio/static/js/main.b16678c2.js",
     "static/js/453.5a2bac45.chunk.js": "/Rita-Vaitkunaite-portfolio/static/js/453.5a2bac45.chunk.js",
     "index.html": "/Rita-Vaitkunaite-portfolio/index.html",
-    "main.a0cdbeb6.css.map": "/Rita-Vaitkunaite-portfolio/static/css/main.a0cdbeb6.css.map",
-    "main.ca04de41.js.map": "/Rita-Vaitkunaite-portfolio/static/js/main.ca04de41.js.map",
+    "main.17092c42.css.map": "/Rita-Vaitkunaite-portfolio/static/css/main.17092c42.css.map",
+    "main.b16678c2.js.map": "/Rita-Vaitkunaite-portfolio/static/js/main.b16678c2.js.map",
     "453.5a2bac45.chunk.js.map": "/Rita-Vaitkunaite-portfolio/static/js/453.5a2bac45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0cdbeb6.css",
-    "static/js/main.ca04de41.js"
+    "static/css/main.17092c42.css",
+    "static/js/main.b16678c2.js"
   ]
 }
