@@ -6,7 +6,7 @@ function ProjectsSection() {
     <section id="projects" className={styles.section}>
       <div className={styles.grid}>
 
-        {/* LEFT — case study teaser */}
+        {/* LEFT – case study teaser */}
         <div className={styles.teaser}>
           <div className={styles.teaserTop}>
             <div className={styles.tagRow}>
@@ -19,18 +19,18 @@ function ProjectsSection() {
             </h2>
             <p className={styles.description}>
               Why people inside organizations bypass the tools built to help
-              them —<br />and what it would take to design something they&apos;d
+              them –<br />and what it would take to design something they&apos;d
               actually choose to use.
             </p>
           </div>
           <div className={styles.teaserBottom}>
             <Link to="/case-studies/shadow-it" className={styles.caseStudyLink}>
-              Case study
+              <span>View Case Study</span>
             </Link>
           </div>
         </div>
 
-        {/* RIGHT — key findings card */}
+        {/* RIGHT – key findings card */}
         <div className={styles.findingsCard}>
           <div className={styles.findingsHeaderRow}>
             <span className={styles.findingsHeaderText}>KEY FINDINGS</span>

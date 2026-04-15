@@ -12,14 +12,12 @@ function HeroSection() {
       <div className={styles.leftPanel}>
         <div className={styles.topContent}>
           <h1 className={styles.title}>
-            UX/UI designer fueled by research and one bossy cat
+            UX/UI designer. Research first, screens second, cat always.
           </h1>
           <hr className={styles.subtitleDivider} />
           <p className={styles.star}>✳</p>
           <p className={styles.subtitle}>
-            I research real problems before designing anything. Currently studying
-            MSc in AI Solutions Management — and keeping one British Longhair in
-            the lifestyle he expects.
+            I study why things don&#8217;t work before I design anything new. Pursuing a master&#8217;s in AI Solutions Management because designing with AI means nothing if you don&#8217;t understand what&#8217;s underneath - the cat, naturally, has no interest in any of this but expects results regardless.
           </p>
         </div>
         <div className={styles.bottomContent}>

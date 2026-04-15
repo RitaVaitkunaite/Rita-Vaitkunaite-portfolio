@@ -26,7 +26,7 @@ function TopNav() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          CONTACT ME
+          Contact Me
         </a>
       </div>
     </nav>

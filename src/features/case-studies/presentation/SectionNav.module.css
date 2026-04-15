@@ -42,3 +42,32 @@
   letter-spacing: 0.05em;
   flex-shrink: 0;
 }
+
+@media (max-width: 1024px) {
+  .nav {
+    position: fixed;
+    top: 48px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .links {
+    flex-direction: row;
+    gap: 0;
+    padding: 0 16px;
+    white-space: nowrap;
+  }
+
+  .link {
+    padding: 8px 20px 8px 0;
+  }
+}

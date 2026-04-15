@@ -104,7 +104,13 @@
   line-height: 1.6;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
+  .samplingTable {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .projectMeta {
     grid-template-columns: 1fr;
   }
@@ -243,7 +249,7 @@
   line-height: 1.55;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   .painGrid {
     grid-template-columns: 1fr;
   }
@@ -398,7 +404,7 @@
   margin: 0;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   .reasonsGrid {
     grid-template-columns: 1fr;
   }
@@ -471,7 +477,7 @@
   border-bottom: none;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   .mindsetSplit {
     grid-template-columns: 1fr;
   }
@@ -790,7 +796,7 @@
   color: #2d3f68;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   .diagramTopGrid {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -815,4 +821,13 @@
 .reflection {
   padding: var(--space-16) 0;
   border-bottom: 1px solid var(--color-border);
+}
+
+@media (max-width: 1024px) {
+  .page {
+    transform: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 136px;
+  }
 }

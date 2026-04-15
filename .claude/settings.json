@@ -1,0 +1,21 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // empty' | grep -qE '(^|/)src/.*\\.(ts|tsx)$' && npm test -- --watchAll=false 2>/dev/null || true",
+            "timeout": 60,
+            "statusMessage": "Running tests..."
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/ernestas/Desktop/projects/react/rv-ux-portfolio/.claude/statusline-command.sh"
+  }
+}
