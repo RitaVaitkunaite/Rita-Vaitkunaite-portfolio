@@ -26,13 +26,22 @@
   font-weight: 400;
   line-height: 78px;
   color: #1a1a1a;
-  margin: 0;
+  margin: 50px 0 0;
 }
 
-.underline {
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 4px;
+.subtitleDivider {
+  border: none;
+  border-top: 1px solid #1a1a1a;
+  width: 100%;
+  margin: 67px 0 0;
+}
+
+.star {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 12px 0 0;
 }
 
 .subtitle {
@@ -41,7 +50,7 @@
   font-weight: 400;
   line-height: 1.4;
   color: #1a1a1a;
-  margin: 28px 0 0;
+  margin: 8px 0 0;
 }
 
 .bottomContent {
@@ -49,17 +58,15 @@
   flex-direction: column;
 }
 
-.viewMyWork {
+.moreBelow {
   font-family: var(--font-sans);
-  font-size: 24px;
+  font-size: 13px;
   font-weight: 400;
-  color: #1a1a1a;
+  letter-spacing: 0.02em;
+  color: #000000;
   text-decoration: none;
-  margin-bottom: 16px;
-}
-
-.viewMyWork:hover {
-  text-decoration: underline;
+  margin-bottom: 4px;
+  cursor: pointer;
 }
 
 .divider {

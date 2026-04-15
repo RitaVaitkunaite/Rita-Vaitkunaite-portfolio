@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import styles from './SectionNav.module.css';
 
 interface Section {
@@ -12,26 +11,20 @@ interface Props {
 }
 
 function SectionNav({ sections, activeId }: Props) {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    function onScroll() {
-      setVisible(window.scrollY > 80);
-    }
-
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
   return (
-    <nav className={`${styles.nav} ${visible ? styles.visible : ''}`}>
+    <nav className={styles.nav}>
       <div className={styles.links}>
-        {sections.map(section => (
+        {sections.map((section, index) => (
           <a
             key={section.id}
             href={`#${section.id}`}
             className={`${styles.link} ${activeId === section.id ? styles.active : ''}`}
           >
+            {activeId === section.id && (
+              <span className={styles.num}>
+                {String(index + 1).padStart(2, '0')}
+              </span>
+            )}
             {section.label}
           </a>
         ))}
