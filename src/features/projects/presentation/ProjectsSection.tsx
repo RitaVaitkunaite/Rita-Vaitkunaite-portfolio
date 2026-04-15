@@ -14,12 +14,12 @@ function ProjectsSection() {
               <span className={styles.year}>2025</span>
             </div>
             <h2 className={styles.title}>
-              Why Won&apos;t they use the{' '}
+              Why Won&apos;t they use the<br />
               <span className={styles.titleUnderline}>official system</span>?
             </h2>
             <p className={styles.description}>
-              Why people inside organisations bypass the tools built to help
-              them — and what it would take to design something they&apos;d
+              Why people inside organizations bypass the tools built to help
+              them —<br />and what it would take to design something they&apos;d
               actually choose to use.
             </p>
           </div>
@@ -27,7 +27,6 @@ function ProjectsSection() {
             <Link to="/case-studies/shadow-it" className={styles.caseStudyLink}>
               Case study
             </Link>
-            <hr className={styles.divider} />
           </div>
         </div>
 

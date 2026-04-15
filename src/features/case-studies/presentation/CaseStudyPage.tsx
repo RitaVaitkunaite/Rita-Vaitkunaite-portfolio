@@ -28,11 +28,6 @@ function CaseStudyPage() {
 
       <div className={styles.page}>
       <div className={styles.titleSection}>
-        <div className={styles.metaPills}>
-          <span className={styles.metaPill}>Self-directed research</span>
-          <span className={styles.metaPill}>2025</span>
-        </div>
-
         <h1 className={styles.title}>
           Why Won&#8217;t They Just <em>Use the Official System?</em>
         </h1>
@@ -216,7 +211,7 @@ function CaseStudyPage() {
       {/* 06 Mindsets */}
       <section className={styles.section} id="cs-mindsets">
         <p className={styles.sectionLabel}>06 &nbsp; Why one policy never works</p>
-        <h2 className={styles.sectionTitle}>10 distinct mindsets around Shadow IT</h2>
+        <h2 className={styles.sectionTitle}>10 distinct mindsets around Shadow&nbsp;IT</h2>
         <p className={styles.body}>The 2024 study didn&#8217;t just find that employees bypass IT – it found they do it for fundamentally different reasons. 10 distinct mindsets emerged, each with a different relationship to risk, rules, and organisational trust. A policy that works for someone who avoids Shadow IT out of genuine security awareness does nothing for someone bypassing IT because a client deadline feels more urgent than a ticket response time.</p>
 
         <div className={styles.mindsetSplit}>
@@ -252,61 +247,59 @@ function CaseStudyPage() {
         <p className={styles.body}>After mapping the Reddit findings against five academic papers spanning 11 years, the most striking thing wasn&#8217;t any single insight – it was the disagreement. Practitioners and researchers are looking at the same problem through completely different lenses and arriving at completely different answers.</p>
         <p className={styles.body}>The literature spreads across five distinct frames: technical controls, organizational agility, governance projects, behaviour change, and working environment reform. Meanwhile, sysadmins on Reddit converged on something none of the papers focused on.</p>
 
-        {/* SVG graph — structure preserved, colors updated to notebook palette */}
-        <svg width="100%" viewBox="0 0 680 610" style={{ margin: '2rem 0', display: 'block', overflow: 'hidden' }}>
-          <defs>
-            <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-              <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </marker>
-          </defs>
-          <text fontFamily="Lato, sans-serif" fontSize="11" x="120" y="24" textAnchor="middle" fill="#7a7a9a" letterSpacing="1.5">REDDIT</text>
-          <text fontFamily="Lato, sans-serif" fontSize="11" x="460" y="24" textAnchor="middle" fill="#7a7a9a" letterSpacing="1.5">5 ACADEMIC PAPERS</text>
-          <line x1="40" y1="32" x2="200" y2="32" stroke="#d4cdb8" strokeWidth="0.5" />
-          <line x1="280" y1="32" x2="640" y2="32" stroke="#d4cdb8" strokeWidth="0.5" />
+        <div className={styles.diagramSection}>
+          <div className={styles.diagramTopGrid}>
+            <div className={styles.diagramLeftCol}>
+              <div className={styles.diagramColTitle}>REDDIT</div>
+              <div className={`${styles.diagramCard} ${styles.diagramLeftCard}`}>
+                <h3>Go through finance</h3>
+                <p>Control the money</p>
+              </div>
+            </div>
 
-          <rect x="40" y="48" width="160" height="68" rx="2" fill="#f0ece0" stroke="#d4cdb8" strokeWidth="0.5" />
-          <text fontFamily="Lato, sans-serif" fontSize="13" fontWeight="600" x="120" y="76" textAnchor="middle" fill="#1a1a2e">Go through finance</text>
-          <text fontFamily="Lato, sans-serif" fontSize="11" x="120" y="96" textAnchor="middle" fill="#3d3d5c">Control the money</text>
-
-          <rect x="280" y="48" width="360" height="68" rx="2" fill="#f0ece0" stroke="#d4cdb8" strokeWidth="0.5" />
-          <text fontFamily="Lato, sans-serif" fontSize="12" fontWeight="600" x="460" y="68" textAnchor="middle" fill="#1a1a2e">Shadow IT – A View From Behind the Curtain</text>
-          <text fontFamily="Lato, sans-serif" fontSize="10" x="460" y="90" textAnchor="middle" fill="#3d3d5c">Technical controls + clearer policy to limit unauthorised tool use.</text>
-
-          <rect x="280" y="132" width="360" height="68" rx="2" fill="#f0ece0" stroke="#d4cdb8" strokeWidth="0.5" />
-          <text fontFamily="Lato, sans-serif" fontSize="12" fontWeight="600" x="460" y="156" textAnchor="middle" fill="#1a1a2e">Perceptions of IT Managers on Shadow IT</text>
-          <text fontFamily="Lato, sans-serif" fontSize="10" x="460" y="176" textAnchor="middle" fill="#3d3d5c">Make IT more agile – deliver faster, align with business units</text>
-
-          <rect x="280" y="216" width="360" height="68" rx="2" fill="#f0ece0" stroke="#d4cdb8" strokeWidth="0.5" />
-          <text fontFamily="Lato, sans-serif" fontSize="12" fontWeight="600" x="460" y="243" textAnchor="middle" fill="#1a1a2e">Shadow IT – A Systematic Literature Review</text>
-          <text fontFamily="Lato, sans-serif" fontSize="10" x="460" y="263" textAnchor="middle" fill="#3d3d5c">Run a governance project – identify, evaluate, implement top-down</text>
-
-          <rect x="280" y="300" width="360" height="68" rx="2" fill="#f0ece0" stroke="#d4cdb8" strokeWidth="0.5" />
-          <text fontFamily="Lato, sans-serif" fontSize="12" fontWeight="600" x="460" y="324" textAnchor="middle" fill="#1a1a2e">Who is the IT Department Anyway</text>
-          <text fontFamily="Lato, sans-serif" fontSize="10" x="460" y="344" textAnchor="middle" fill="#3d3d5c">Communication + tailored training – treat it as a behaviour change problem</text>
-
-          <rect x="280" y="384" width="360" height="84" rx="2" fill="#f0ece0" stroke="#d4cdb8" strokeWidth="0.5" />
-          <text fontFamily="Lato, sans-serif" fontSize="12" fontWeight="600" x="460" y="404" textAnchor="middle" fill="#1a1a2e">Understanding Shadow IT: IT Accessibility,</text>
-          <text fontFamily="Lato, sans-serif" fontSize="12" fontWeight="600" x="460" y="420" textAnchor="middle" fill="#1a1a2e">Work Overload and Employee Strain</text>
-          <text fontFamily="Lato, sans-serif" fontSize="10" x="460" y="443" textAnchor="middle" fill="#3d3d5c">Fix the working environment – reduce overload and staff adequately.</text>
-
-          <line x1="270" y1="82" x2="270" y2="418" stroke="#d4cdb8" strokeWidth="0.5" />
-          <line x1="270" y1="82" x2="280" y2="82" stroke="#d4cdb8" strokeWidth="0.5" />
-          <line x1="270" y1="418" x2="280" y2="418" stroke="#d4cdb8" strokeWidth="0.5" />
-
-          <line x1="120" y1="116" x2="120" y2="510" stroke="#7a7a9a" strokeWidth="0.75" markerEnd="url(#arrow)" />
-          <line x1="460" y1="468" x2="460" y2="510" stroke="#7a7a9a" strokeWidth="0.75" markerEnd="url(#arrow)" />
-
-          <rect x="40" y="524" width="600" height="64" rx="2" fill="#f0ece0" stroke="#d4cdb8" strokeWidth="0.5" />
-          <text fontFamily="Lato, sans-serif" fontSize="10" x="340" y="518" textAnchor="middle" fill="#7a7a9a" letterSpacing="1.2">AFTER 11 YEARS OF RESEARCH</text>
-          <text fontFamily="Lato, sans-serif" fontSize="13" fontWeight="600" x="340" y="548" textAnchor="middle" fill="#1a1a2e">No consensus on how to fix Shadow IT.</text>
-          <text fontFamily="Lato, sans-serif" fontSize="10" x="340" y="568" textAnchor="middle" fill="#3d3d5c">Six sources, six different answers – technical, organizational, cultural, financial.</text>
-        </svg>
+            <div className={styles.diagramRightCol}>
+              <div className={styles.diagramColTitle}>5 ACADEMIC PAPERS</div>
+              <div className={styles.diagramRightStack}>
+                <div className={styles.diagramSpine} />
+                <div className={`${styles.diagramCard} ${styles.diagramPaperCard}`}>
+                  <h4>Shadow IT &#8211; A View From Behind the Curtain</h4>
+                  <p>Technical controls + clearer policy to limit unauthorised tool use.</p>
+                </div>
+                <div className={`${styles.diagramCard} ${styles.diagramPaperCard}`}>
+                  <h4>Perceptions of IT Managers on Shadow IT</h4>
+                  <p>Make IT more agile &#8211; deliver faster, align with business units</p>
+                </div>
+                <div className={`${styles.diagramCard} ${styles.diagramPaperCard}`}>
+                  <h4>Shadow IT &#8211; A Systematic Literature Review</h4>
+                  <p>Run a governance project &#8211; identify, evaluate, implement top-down</p>
+                </div>
+                <div className={`${styles.diagramCard} ${styles.diagramPaperCard}`}>
+                  <h4>Who is the IT Department Anyway</h4>
+                  <p>Communication + tailored training &#8211; treat it as a behaviour change problem</p>
+                </div>
+                <div className={`${styles.diagramCard} ${styles.diagramPaperCard} ${styles.diagramPaperCardLast}`}>
+                  <h4>Understanding Shadow IT: IT Accessibility,<br />Work Overload and Employee Strain</h4>
+                  <p>Fix the working environment &#8211; reduce overload and staff adequately.</p>
+                </div>
+              </div>
+              <div className={styles.diagramRightArrow} />
+            </div>
+          </div>
+          <div className={styles.diagramBottomLabel}>AFTER 11 YEARS OF RESEARCH</div>
+          <div className={styles.diagramBottomCard}>
+            <h2>No consensus on how to fix Shadow IT.</h2>
+            <p>Six sources, six different answers &#8211; technical, organizational, cultural, financial.</p>
+          </div>
+        </div>
 
         <p className={styles.body}>Meanwhile, sysadmins on Reddit converged on something none of the papers focused on: <em>&#8220;I&#8217;ve found that the best way to control shadow IT is always through finance – if they can&#8217;t pay for it, they can&#8217;t use it.&#8221;</em></p>
 
         <div className={styles.finding}>
           <p className={styles.findingLabel}>What this means for design</p>
-          <p className={styles.findingText}>Shadow IT isn&#8217;t an IT problem – it&#8217;s a communication and trust problem between IT, finance, and the rest of the organisation.</p>
+          <div className={styles.findingBody}>
+            <span className={styles.findingTag}>[ ! ]</span>
+            <p className={styles.findingText}>Shadow IT isn&#8217;t an IT problem &#8211; it&#8217;s a communication and trust problem between IT, finance, and the rest of the organisation.</p>
+          </div>
         </div>
       </section>
 

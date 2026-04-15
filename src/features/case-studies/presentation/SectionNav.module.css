@@ -1,69 +1,29 @@
+/* ── Vertical right sidebar nav ─────────────────── */
 .nav {
   position: fixed;
-  top: 32px;
-  left: 0;
-  right: 0;
-  z-index: 100;
+  right: 48px;
+  top: 130px;
+  z-index: 40;
+}
+
+.links {
   display: flex;
-  align-items: center;
-  gap: var(--space-6);
-  padding: 0 var(--space-8);
-  height: 3rem;
-  background-color: var(--color-nav-bg);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--color-border);
-  transform: translateY(-110%);
-  opacity: 0;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s;
+  flex-direction: column;
+  gap: 0;
 }
 
-.visible {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.backLink {
+.link {
   font-family: var(--font-sans);
   font-size: 0.72rem;
   font-weight: 400;
   color: var(--color-text-muted);
   text-decoration: none;
-  white-space: nowrap;
-  letter-spacing: 0.05em;
-  transition: color var(--transition-base);
-  flex-shrink: 0;
-}
-
-.backLink:hover {
-  color: var(--color-text-primary);
-}
-
-.links {
+  padding: 4px 0;
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-  gap: 0;
-}
-
-.links::-webkit-scrollbar {
-  display: none;
-}
-
-.link {
-  font-family: var(--font-sans);
-  font-size: 0.68rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
-  padding: 0.8rem var(--space-4);
+  align-items: baseline;
+  gap: 6px;
   white-space: nowrap;
-  border-bottom: 2px solid transparent;
-  text-decoration: none;
-  transition: color var(--transition-base), border-color var(--transition-base);
+  transition: color var(--transition-base);
 }
 
 .link:hover {
@@ -72,25 +32,13 @@
 
 .active {
   color: var(--color-text-primary);
-  border-bottom-color: var(--color-accent-pink);
 }
 
-/* ── Light theme: dark bar matching TopNav ── */
-:global([data-theme="light"]) .nav {
-  border-bottom-color: rgba(255, 255, 255, 0.08);
-}
-:global([data-theme="light"]) .backLink {
-  color: rgba(255, 255, 255, 0.55);
-}
-:global([data-theme="light"]) .backLink:hover {
-  color: #ffffff;
-}
-:global([data-theme="light"]) .link {
-  color: rgba(255, 255, 255, 0.55);
-}
-:global([data-theme="light"]) .link:hover {
-  color: rgba(255, 255, 255, 0.85);
-}
-:global([data-theme="light"]) .active {
-  color: #ffffff;
+.num {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
 }

@@ -1,13 +1,21 @@
 import styles from './HeroSection.module.css';
 
 function HeroSection() {
+  function handleMoreBelow(e: React.MouseEvent<HTMLAnchorElement>) {
+    e.preventDefault();
+    const target = document.getElementById('projects');
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <div className={styles.hero}>
       <div className={styles.leftPanel}>
         <div className={styles.topContent}>
           <h1 className={styles.title}>
-            UX UI designer fueled by <span className={styles.underline}>research</span> and one <span className={styles.underline}>bossy</span> cat
+            UX/UI designer fueled by research and one bossy cat
           </h1>
+          <hr className={styles.subtitleDivider} />
+          <p className={styles.star}>✳</p>
           <p className={styles.subtitle}>
             I research real problems before designing anything. Currently studying
             MSc in AI Solutions Management — and keeping one British Longhair in
@@ -15,7 +23,7 @@ function HeroSection() {
           </p>
         </div>
         <div className={styles.bottomContent}>
-          <a href="#projects" className={styles.viewMyWork}>View my work</a>
+          <a href="#projects" className={styles.moreBelow} onClick={handleMoreBelow}>PROJECTS BELOW</a>
           <hr className={styles.divider} />
         </div>
       </div>

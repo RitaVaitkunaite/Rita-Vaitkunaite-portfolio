@@ -54,9 +54,8 @@
 }
 
 .titleUnderline {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
 }
 
 .description {
@@ -70,23 +69,21 @@
 
 .caseStudyLink {
   font-family: var(--font-sans);
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
-  color: #1a1a1a;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #000000;
+  background: transparent;
+  padding: 6px 0;
   text-decoration: none;
-  margin-bottom: 16px;
-  display: block;
+  display: inline-block;
+  margin-bottom: 0;
 }
 
-.caseStudyLink:hover {
-  text-decoration: underline;
-}
-
-.divider {
-  border: none;
-  border-top: 1px solid #1a1a1a;
-  width: 100%;
-  margin: 0;
+.teaserBottom {
+  border-bottom: 1px solid #1a1a1a;
+  padding-bottom: 0;
 }
 
 /* ── RIGHT column — Key Findings card ── */
@@ -94,7 +91,7 @@
 .findingsCard {
   background: #C8F135;
   color: #002500;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -106,6 +103,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #002500;
   margin-bottom: 12px;
 }
 
