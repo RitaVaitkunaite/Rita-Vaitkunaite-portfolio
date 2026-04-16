@@ -47,35 +47,40 @@ src/
 
 ## Visual Design Language
 
-**Aesthetic: dark cinematic editorial.** The portfolio feels like a magazine cover — full-screen photographic background, frosted glass panels, and minimal white-on-dark typography.
+**Aesthetic: clean editorial.** Light backgrounds, dark ink typography, and a serif/sans type pairing. The homepage is a two-column layout (text left, cat photo right); case study pages are minimal long-form reading layouts with a lime-green accent for key findings.
 
 **Fonts (loaded via Google Fonts in `public/index.html`):**
-- `--font-serif: 'EB Garamond'` — headings, display text, italic accent copy, post-it titles
-- `--font-sans: 'DM Sans'` — body copy, UI labels, nav links, captions
+- `--font-serif: 'EB Garamond'` — pullquote marks
+- `--font-sans: 'DM Sans'` — body copy, UI labels, nav, captions, most text
+- `'Playfair Display', serif` — display headings (hardcoded in CSS, not yet a token)
+- `'Roboto Mono', monospace` — monospace labels, findings cards, meta tags (hardcoded in CSS, not yet a token)
 
 **Key CSS tokens (all in `src/index.css`):**
-- `--color-bg` — main dark background (#0d1a14, dark forest green)
-- `--color-bg-scroll` — slightly lighter bg for scrollable inner pages (#111e18)
-- `--color-glass-bg` — frosted glass panel fill (rgba(255,255,255,0.18))
-- `--color-glass-border` — frosted glass border (rgba(255,255,255,0.30))
-- `--color-text-primary / secondary / muted` — white at 100% / 85% / 55% opacity
-- `--color-accent-pink` — hot pink accent (#ff2d78), used for active nav and accent tag
-- `--color-postit-yellow / pink` — post-it note backgrounds (#fef08a / #fda4af)
-- `--color-ink-dark` — dark ink for text inside post-its (#1a1a1a)
-- `--color-border` — subtle white border (rgba(255,255,255,0.12))
+- `--color-bg-scroll` — page background: dark (`#111e18`) in default theme, white (`#ffffff`) in light theme
+- `--color-text-primary / secondary / muted` — resolves to dark ink in light theme (`#1a1a1a` / `#1a1a1a` / `rgba(26,26,26,0.5)`)
+- `--color-ink-dark` — `#1a1a1a`, dark ink used directly in light sections
+- `--color-ink-dark-dim` — `rgba(26, 26, 26, 0.65)`, muted dark ink
+- `--color-accent-lime` — `#C8F135`, lime green for category tags and finding callouts
+- `--color-ink-green` — `#002500`, text color used on lime backgrounds
+- `--color-border` — subtle separator: `rgba(255,255,255,0.12)` default / `rgba(26,26,26,0.2)` light theme
+- `--color-surface / surface-strong` — subtle fills for table headers, diagram cards
+- Type scale (`--text-xs` → `--text-3xl`) and spacing (`--space-2` → `--space-24`) — used throughout
+
+**Tokens defined but currently unused** (legacy, kept for future use):
+- `--color-glass-bg / glass-border`, `--color-postit-yellow / postit-pink`, `--color-accent-pink`
+
+**Theme switching:**
+- Default (no `data-theme`): dark CSS variable values — but currently all page sections hardcode white/light backgrounds, so the dark values are not visible.
+- `data-theme="light"`: applied to case study pages (`/case-studies/*`) via `App.tsx`. Overrides `--color-bg-scroll` to `#ffffff` and text tokens to dark ink, producing a white reading layout.
 
 **Layout:**
-- **Homepage (`/`):** `PageLayout variant="hero"` — full-screen fixed, `overflow: hidden`. Background: `/cat1.jpeg` (painting) with vignette overlay. Hero panel and post-its are all `position: fixed`.
-- **Inner pages:** `PageLayout variant="scrollable"` — normal scroll, `--color-bg-scroll` background. Content padded inside a `.page` div.
-- `TopNav` (`src/shared/ui/TopNav/`) — fixed nav bar present on all pages, z-index 50, transparent background.
+- **All current pages** use `PageLayout variant="scrollable"` — `min-height: 100vh`, `--color-bg-scroll` background.
+- `PageLayout variant="hero"` exists (full-screen fixed layout) but is currently unused.
+- **Homepage (`/`):** `HeroSection` (split: text left 38%, `/cat3.png` right) + `ProjectsSection` stacked, both with white section backgrounds.
+- **Case study pages (`/case-studies/*`):** single `CaseStudyPage` component, long-form layout with a fixed-offset `.page` container (max-width 840px, offset left by 80px on desktop).
+- `TopNav` (`src/shared/ui/TopNav/`) — fixed, solid white (`#ffffff`) background, black text, z-index 50, present on all pages.
 
-**Decoration patterns:**
-- Frosted glass: `background: var(--color-glass-bg)` + `backdrop-filter: blur(2px)` + `border: 1px solid var(--color-glass-border)`
-- Post-it notes: rotated with `transform: rotate(Xdeg)`, shadow lift on hover, tape strip via `::before`
-- Floating accent tag: `position: fixed`, `--color-accent-pink`, animated float keyframe
-- Cat eye tracking: `CatEyesOverlay` component + `useCatEyes` hook — DOM elements positioned over cat eyes in `/cat1.jpeg`, pupils follow cursor
-
-**No UI libraries.** All effects are pure CSS — no external component library is used or needed.
+**No UI libraries.** All styling is pure CSS — no external component library is used or needed.
 
 ## Styling: CSS Modules
 

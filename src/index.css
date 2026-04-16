@@ -23,6 +23,9 @@ html {
   --color-postit-yellow: #fef08a;
   --color-postit-pink:   #fda4af;
   --color-ink-dark:      #1a1a1a;
+  --color-ink-dark-dim:  rgba(26, 26, 26, 0.65);
+  --color-accent-lime:   #C8F135;
+  --color-ink-green:     #002500;
   --color-border:        rgba(255, 255, 255, 0.12);
 
   /* Type scale */
