@@ -5,7 +5,7 @@
 
 .grid {
   display: flex;
-  gap: 74px;
+  gap: 16px;
   align-items: stretch;
 }
 
@@ -32,7 +32,7 @@
   font-size: 12px;
   font-weight: 400;
   padding: 3px 10px;
-  border-radius: 4px;
+  border-radius: 0;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -168,6 +168,10 @@
 
   .title {
     font-size: 24px;
+  }
+
+  .teaserBottom {
+    margin-top: 24px;
   }
 
   .findingsCard {

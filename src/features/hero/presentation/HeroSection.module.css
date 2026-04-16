@@ -112,7 +112,7 @@
 
   .leftPanel {
     width: 100%;
-    padding: 24px 20px 32px;
+    padding: 12px 20px 32px;
     flex: none;
   }
 
@@ -123,11 +123,20 @@
   .title {
     font-size: 36px;
     line-height: 1.15;
+    margin-top: 16px;
+  }
+
+  .subtitleDivider {
+    margin-top: 24px;
   }
 
   .subtitle {
     font-size: 15px;
     margin-top: 16px;
+  }
+
+  .bottomContent {
+    margin-top: 28px;
   }
 
   .viewMyWork {

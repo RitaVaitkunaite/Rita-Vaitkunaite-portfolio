@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useEffect } from 'react';
 import PageLayout from '../../../shared/ui/PageLayout/PageLayout';
 import useActiveSection from '../../../shared/hooks/useActiveSection';
 import SectionNav from './SectionNav';
@@ -22,6 +22,10 @@ function CaseStudyPage() {
   const sectionIds = useMemo(() => SECTIONS.map(s => s.id), []);
   const activeId = useActiveSection(sectionIds);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <PageLayout variant="scrollable" theme="light">
       <SectionNav sections={SECTIONS} activeId={activeId} />
@@ -29,7 +33,7 @@ function CaseStudyPage() {
       <div className={styles.page}>
       <div className={styles.titleSection}>
         <h1 className={styles.title}>
-          Why Won&#8217;t They Just <em>Use the Official System?</em>
+          Why Won&#8217;t They Just Use the <em>Official System?</em>
         </h1>
 
         <p className={styles.intro}>
@@ -343,18 +347,34 @@ function CaseStudyPage() {
         <p className={styles.sectionLabel}>09 &nbsp; Limitations</p>
         <h2 className={styles.sectionTitle}>What this research can&#8217;t claim</h2>
 
-        <div className={styles.limitationsList}>
-          <div className={styles.limitationItem}>
-            <strong>Reddit sampling bias.</strong> All 75 threads come from people frustrated enough to post publicly. Employees who quietly use workarounds without complaint – likely the majority – are invisible in this dataset.
+        <div className={styles.papers}>
+          <div className={styles.paper}>
+            <span className={styles.paperYear}>01</span>
+            <div>
+              <div className={styles.paperTitle}>Reddit sampling bias.</div>
+              <p className={styles.paperDesc}>All 75 threads come from people frustrated enough to post publicly. Employees who quietly use workarounds without complaint &#8211; likely the majority &#8211; are invisible in this dataset.</p>
+            </div>
           </div>
-          <div className={styles.limitationItem}>
-            <strong>No primary interviews.</strong> Every finding is secondhand. The reasons employees give for bypassing IT on Reddit may differ from what they&#8217;d say in a structured interview – or what they&#8217;d actually do in practice.
+          <div className={styles.paper}>
+            <span className={styles.paperYear}>02</span>
+            <div>
+              <div className={styles.paperTitle}>No primary interviews.</div>
+              <p className={styles.paperDesc}>Every finding is secondhand. The reasons employees give for bypassing IT on Reddit may differ from what they&#8217;d say in a structured interview &#8211; or what they&#8217;d actually do in practice.</p>
+            </div>
           </div>
-          <div className={styles.limitationItem}>
-            <strong>Literature spans 11 years.</strong> The oldest paper is from 2014. The tooling landscape – cloud adoption, SaaS proliferation, remote work – has shifted significantly. Some behavioural patterns may no longer hold.
+          <div className={styles.paper}>
+            <span className={styles.paperYear}>03</span>
+            <div>
+              <div className={styles.paperTitle}>Literature spans 11 years.</div>
+              <p className={styles.paperDesc}>The oldest paper is from 2014. The tooling landscape &#8211; cloud adoption, SaaS proliferation, remote work &#8211; has shifted significantly. Some behavioural patterns may no longer hold.</p>
+            </div>
           </div>
-          <div className={styles.limitationItem}>
-            <strong>Findings aren&#8217;t validated.</strong> The insight about finance as a leverage point came exclusively from Reddit. It hasn&#8217;t been tested with IT managers, finance teams, or employees directly. It&#8217;s a hypothesis for further research, not a confirmed conclusion.
+          <div className={styles.paper}>
+            <span className={styles.paperYear}>04</span>
+            <div>
+              <div className={styles.paperTitle}>Findings aren&#8217;t validated.</div>
+              <p className={styles.paperDesc}>The insight about finance as a leverage point came exclusively from Reddit. It hasn&#8217;t been tested with IT managers, finance teams, or employees directly. It&#8217;s a hypothesis for further research, not a confirmed conclusion.</p>
+            </div>
           </div>
         </div>
       </section>
