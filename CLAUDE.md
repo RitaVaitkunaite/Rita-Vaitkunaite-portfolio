@@ -6,6 +6,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 You are an expert React + TypeScript developer. Prioritize simplicity, readability, and clean code over cleverness. Prefer the simplest implementation that satisfies requirements — no speculative abstractions, no over-engineering.
 
+## Copy & Spelling
+
+- Use American English spellings: "organization" / "organizational" (not "organisation" / "organisational")
+
 ## Commands
 
 - **Start dev server:** `npm start`

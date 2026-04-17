@@ -37,7 +37,7 @@ function CaseStudyPage() {
         </h1>
 
         <p className={styles.intro}>
-          An exploratory research project into why people inside organisations constantly work around the systems built to help them – what drives it, what sustains it, and what it might take to design something they&#8217;d actually choose to use.
+          An exploratory research project into why people inside organizations constantly work around the systems built to help them – what drives it, what sustains it, and what it might take to design something they&#8217;d actually choose to use.
         </p>
 
         <div className={styles.projectMeta}>
@@ -141,7 +141,7 @@ function CaseStudyPage() {
         <p className={styles.sectionLabel}>03 &nbsp; The pivot</p>
         <h2 className={styles.sectionTitle}>Shadow IT was underneath everything</h2>
         <p className={styles.body}>As I mapped the pain points, I noticed Shadow IT wasn&#8217;t just one item on the list – it was underneath almost all of them. The unauthorised purchases, the invisible tools, the offboarding gaps, the budget confusion: they all traced back to the same root. People bypassing official IT systems to get work done.</p>
-        <p className={styles.body}>That shifted the research question – from billing symptoms to the organisational behaviour causing them. So I stopped collecting quotes on billing and went to look at Shadow IT specifically.</p>
+        <p className={styles.body}>That shifted the research question – from billing symptoms to the organizational behaviour causing them. So I stopped collecting quotes on billing and went to look at Shadow IT specifically.</p>
       </section>
 
       {/* Research Question */}
@@ -174,7 +174,7 @@ function CaseStudyPage() {
             <span className={styles.paperYear}>2020</span>
             <div>
               <div className={styles.paperTitle}>Shadow IT – A Systematic Literature Review</div>
-              <p className={styles.paperDesc}>Mapped why Shadow IT emerges, how organisations evaluate individual instances, and how user capability shapes the kind of Shadow IT that develops.</p>
+              <p className={styles.paperDesc}>Mapped why Shadow IT emerges, how organizations evaluate individual instances, and how user capability shapes the kind of Shadow IT that develops.</p>
             </div>
           </div>
           <div className={styles.paper}>
@@ -204,7 +204,7 @@ function CaseStudyPage() {
           <div className={styles.reasonCard}><div className={styles.reasonNum}>02</div><div className={styles.reasonTitle}>Official tools are insufficient</div><p className={styles.reasonDesc}>When the approved tool doesn&#8217;t do what the job requires, employees find one that does.</p></div>
           <div className={styles.reasonCard}><div className={styles.reasonNum}>03</div><div className={styles.reasonTitle}>Client deadlines override policy</div><p className={styles.reasonDesc}>Employees can&#8217;t tell a client that work isn&#8217;t done because an approved tool isn&#8217;t available.</p></div>
           <div className={styles.reasonCard}><div className={styles.reasonNum}>04</div><div className={styles.reasonTitle}>People know the rules but break them</div><p className={styles.reasonDesc}>Most employees understand the policy and the risks. They still bypass when the official path feels worse.</p></div>
-          <div className={styles.reasonCard}><div className={styles.reasonNum}>05</div><div className={styles.reasonTitle}>Underestimating risk</div><p className={styles.reasonDesc}>Many users assume organisational monitoring will catch anything dangerous, creating a false sense of protection.</p></div>
+          <div className={styles.reasonCard}><div className={styles.reasonNum}>05</div><div className={styles.reasonTitle}>Underestimating risk</div><p className={styles.reasonDesc}>Many users assume organizational monitoring will catch anything dangerous, creating a false sense of protection.</p></div>
           <div className={styles.reasonCard}><div className={styles.reasonNum}>06</div><div className={styles.reasonTitle}>Personal habits blur into work</div><p className={styles.reasonDesc}>Tools people use privately – Drive, Dropbox, WhatsApp – migrate into work contexts naturally.</p></div>
           <div className={styles.reasonCard}><div className={styles.reasonNum}>07</div><div className={styles.reasonTitle}>Controls are easily bypassed</div><p className={styles.reasonDesc}>Even when IT tries to block tools, technically capable employees find workarounds.</p></div>
           <div className={styles.reasonCard}><div className={styles.reasonNum}>08</div><div className={styles.reasonTitle}>Response to overload and strain</div><p className={styles.reasonDesc}>When workload is high and tools are inadequate, employees reach for whatever works fastest.</p></div>
@@ -216,7 +216,7 @@ function CaseStudyPage() {
       <section className={styles.section} id="cs-mindsets">
         <p className={styles.sectionLabel}>06 &nbsp; Why one policy never works</p>
         <h2 className={styles.sectionTitle}>10 distinct mindsets around Shadow&nbsp;IT</h2>
-        <p className={styles.body}>The 2024 study didn&#8217;t just find that employees bypass IT – it found they do it for fundamentally different reasons. 10 distinct mindsets emerged, each with a different relationship to risk, rules, and organisational trust. A policy that works for someone who avoids Shadow IT out of genuine security awareness does nothing for someone bypassing IT because a client deadline feels more urgent than a ticket response time.</p>
+        <p className={styles.body}>The 2024 study didn&#8217;t just find that employees bypass IT – it found they do it for fundamentally different reasons. 10 distinct mindsets emerged, each with a different relationship to risk, rules, and organizational trust. A policy that works for someone who avoids Shadow IT out of genuine security awareness does nothing for someone bypassing IT because a client deadline feels more urgent than a ticket response time.</p>
 
         <div className={styles.mindsetSplit}>
           <div className={styles.mindsetColLeft}>
@@ -302,7 +302,7 @@ function CaseStudyPage() {
           <p className={styles.findingLabel}>What this means for design</p>
           <div className={styles.findingBody}>
             <span className={styles.findingTag}>[ ! ]</span>
-            <p className={styles.findingText}>Shadow IT isn&#8217;t an IT problem &#8211; it&#8217;s a communication and trust problem between IT, finance, and the rest of the organisation.</p>
+            <p className={styles.findingText}>Shadow IT isn&#8217;t an IT problem &#8211; it&#8217;s a communication and trust problem between IT, finance, and the rest of the organization.</p>
           </div>
         </div>
       </section>
@@ -311,7 +311,7 @@ function CaseStudyPage() {
       <section className={styles.section} id="cs-next">
         <p className={styles.sectionLabel}>08 &nbsp; What this opens up</p>
         <h2 className={styles.sectionTitle}>Where design could go next</h2>
-        <p className={styles.body}>The research makes one thing clear: Shadow IT isn&#8217;t a problem design can fully solve. The literature points to organisational agility, culture change, working environment reform, and governance structures – all of which sit outside a designer&#8217;s scope. No interface fixes a company that&#8217;s understaffed, moves too slowly, or has a broken relationship between IT and the rest of the business.</p>
+        <p className={styles.body}>The research makes one thing clear: Shadow IT isn&#8217;t a problem design can fully solve. The literature points to organizational agility, culture change, working environment reform, and governance structures – all of which sit outside a designer&#8217;s scope. No interface fixes a company that&#8217;s understaffed, moves too slowly, or has a broken relationship between IT and the rest of the business.</p>
         <p className={styles.body}>But there is one area where design could make a meaningful difference – the approval and request flow that sits between employees, IT, and finance. Right now that flow is either broken or nonexistent. Reddit sysadmins identified this as the most actionable lever: if the official path were faster and less painful than the workaround, more people would use it. That&#8217;s a design problem worth investigating.</p>
         <p className={styles.body}>Getting there would mean starting with three groups of people:</p>
 
